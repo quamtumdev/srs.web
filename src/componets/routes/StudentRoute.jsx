@@ -4,7 +4,7 @@ import Student from "../backend/Student-Panel/StudentProfile/Student";
 import MyCourses from "../backend/Student-Panel/StudentCourses/MyCourses";
 import Subjects from "../backend/Student-Panel/StudentSubject/Subjects";
 import Physics from "../backend/Student-Panel/StudentSubject/Physics";
-import Chemistry from "../backend/Student-Panel/StudentSubject/chemistry";
+import Chemistry from "../backend/Student-Panel/StudentSubject/Chemistry";
 import Maths from "../backend/Student-Panel/StudentSubject/Maths";
 import GenericChapterNotes from "../backend/Student-Panel/StudentNotes/GenericChapterNotes";
 import StudentAssignment from "../backend/Student-Panel/StudentAssignment/StudentAssignment";
