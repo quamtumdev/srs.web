@@ -1,0 +1,87 @@
+.testimonial-swiper {
+  width: 100%;
+  height: auto; /* Adjust height automatically */
+}
+
+.testimonial-swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonial-swiper-slide img {
+  width: 100%;
+}
+
+/* Custom styles for navigation buttons */
+.swiper-button-next {
+  right: 25%;
+  background: #2255a6;
+  width: 35px;
+  height: 34px;
+  color: #fff;
+  border-radius: 50px !important;
+  top: 92% !important;
+}
+
+.swiper-button-prev {
+  left: 57%;
+  z-index: 99;
+  background: #2255a6;
+  width: 35px;
+  height: 34px;
+  color: #fff;
+  border-radius: 50px !important;
+  top: 92% !important;
+}
+
+.dobule-quotes {
+  font-size: 60px !important;
+  position: relative;
+  left: 10px !important;
+}
+
+.testimonial-three {
+  padding-bottom: 30px !important;
+}
+
+/* Optional: Change hover effects */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fff;
+  font-weight: 600;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+}
+
+.testimonial-ratings {
+  margin-top: -25px !important;
+}
+@media (max-width: 767.98px) {
+  .swiper-button-prev {
+    left: 55%;
+    z-index: 99;
+    background: #2255a6;
+    width: 35px;
+    height: 34px;
+    color: #fff;
+    border-radius: 50px !important;
+    top: 92% !important;
+  }
+  .swiper-button-next {
+    right: 16%;
+    background: #2255a6;
+    width: 35px;
+    height: 34px;
+    color: #fff;
+    border-radius: 50px !important;
+    top: 92% !important;
+  }
+  .home-three .testimonial-item-five {
+    width: 300px;
+    justify-content: center;
+    margin-left: 16px;
+  }
+}

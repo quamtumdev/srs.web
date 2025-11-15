@@ -1,0 +1,33 @@
+.modalTitle {
+  position: relative;
+  left: 107px !important;
+  padding-bottom: 13px !important;
+}
+.modalCloseIcon {
+  margin-top: -19px !important;
+  font-size: 30px !important;
+  color: #2053a4 !important;
+}
+.loginMethodToggle {
+  position: relative !important;
+  top: -14px !important;
+  left: 99px !important;
+  font-size: 13px !important;
+}
+.modalDialog {
+  position: relative;
+  top: 105px !important;
+}
+@media (max-width: 767.98px) {
+  .modalTitle {
+    position: relative;
+    left: 47px !important;
+    padding-bottom: 13px !important;
+  }
+  .loginMethodToggle {
+    position: relative !important;
+    top: -14px !important;
+    left: 21px !important;
+    font-size: 13px !important;
+  }
+}
