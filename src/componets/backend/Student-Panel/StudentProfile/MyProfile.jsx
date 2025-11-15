@@ -53,7 +53,7 @@ const MyProfile = () => {
     if (!imagePath) return "/assets/backend-img/user.png";
     if (imagePath.startsWith("http")) return imagePath;
     if (imagePath.startsWith("/assets")) return imagePath;
-    return `http://localhost:5000${imagePath}`;
+    return `https://srs-api-six.vercel.app${imagePath}`;
   };
 
   // Load student data from localStorage and API
