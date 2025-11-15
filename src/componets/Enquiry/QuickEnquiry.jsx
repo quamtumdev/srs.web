@@ -64,9 +64,9 @@ const QuickEnquiry = () => {
                 />
               </div>
               <div className="input-block">
-                <select name="course" className="form-control" required>
+                <select name="course" className="form-control" required defaultValue="NEET 1 YEAR COURSE (IMPULSE)">
                   <option value="">Select Course</option>
-                  <option selected>NEET 1 YEAR COURSE (IMPULSE)</option>
+                  <option value="NEET 1 YEAR COURSE (IMPULSE)">NEET 1 YEAR COURSE (IMPULSE)</option>
                   <option>NEET 2 YEAR COURSE (AGILE)</option>
                   <option>NEET 3 YEAR COURSE (EDGE)</option>
                   <option>NEET 4 YEAR COURSE (SEED)</option>
