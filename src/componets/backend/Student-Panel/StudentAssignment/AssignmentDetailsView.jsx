@@ -2,7 +2,6 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect, useRef, useCallback } from "react";
 import axios from "axios";
-import "../../../../assets/backend/dist/css/studentadmin.css";
 
 const AssignmentDetailsView = () => {
   const location = useLocation();

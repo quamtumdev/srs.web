@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "../../../../assets/backend/dist/css/studentadmin.css";
 import SubjectGrid from "./components/SubjectGrid";
 import LoadingSpinner from "./components/LoadingSpinner";
 

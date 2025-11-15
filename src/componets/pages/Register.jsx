@@ -4,6 +4,7 @@ import firebase from "../firebase/firebase";
 import { toast } from "react-toastify"; // Import toast for notifications
 import { Link } from "react-router-dom";
 import "../../custom.css";
+import * as bootstrap from "bootstrap";
 const Register = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("");

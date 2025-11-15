@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import "../../../../assets/backend/dist/css/studentadmin.css";
 
 const MyCourses = () => {
   const [courses, setCourses] = useState([]);

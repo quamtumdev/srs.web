@@ -4,7 +4,6 @@ import SubjectCard from "./SubjectCard";
 import LoadingSpinner from "./LoadingSpinner";
 import ErrorMessage from "./ErrorMessage";
 import EmptyState from "./EmptyState";
-import "../../../../../assets/backend/dist/css/studentadmin.css";
 
 const SubjectList = () => {
   const { courseId } = useParams();

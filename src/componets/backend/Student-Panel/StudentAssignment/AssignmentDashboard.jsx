@@ -5,7 +5,6 @@ import axios from "axios";
 import AssignmentCard from "./AssignmentCard";
 import AssignmentHeader from "./AssignmentHeader";
 import AssignmentFilters from "./AssignmentFilters";
-import "../../../../assets/backend/dist/css/studentadmin.css";
 import { Outlet } from "react-router-dom";
 
 const AssignmentDashboard = () => {

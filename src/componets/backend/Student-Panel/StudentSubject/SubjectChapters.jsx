@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useSubjectChapters } from "./hooks/useSubjectChapters";
 import ChapterCard from "./common/ChapterCard"; // Same folder में है
-import "../../../../assets/backend/dist/css/studentadmin.css";
 
 const SubjectChapters = ({
   subjectName,

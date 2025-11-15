@@ -6,6 +6,7 @@ import { useState, useRef } from "react";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import firebase from "../../componets/firebase/firebase";
 import { toast } from "react-toastify";
+import * as bootstrap from "bootstrap";
 
 export const MobileLogin = () => {
   const [showModal, setShowModal] = useState(false); // To show/hide login modal

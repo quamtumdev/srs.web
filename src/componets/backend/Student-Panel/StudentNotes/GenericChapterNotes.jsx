@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import useChapterTopics from "./hooks/useChapterTopics";
 import FullscreenNotesView from "./components/FullscreenNotesView";
 import TopicsListView from "./components/TopicsListView";
-import "../../../../assets/backend/dist/css/studentadmin.css";
 
 const GenericChapterNotes = () => {
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
