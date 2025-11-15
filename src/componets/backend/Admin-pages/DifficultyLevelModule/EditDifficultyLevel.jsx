@@ -52,7 +52,7 @@ const EditDifficultyLevel = ({
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/difficultyLevel/difficultyLevel/${difficultyLevel._id}`,
+        `https://srs-api-six.vercel.app/api/auth/difficultyLevel/difficultyLevel/${difficultyLevel._id}`,
         {
           method: "PUT",
           headers: {
@@ -94,7 +94,7 @@ const EditDifficultyLevel = ({
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/difficultyLevel/difficultyLevel/${difficultyLevel._id}`,
+          `https://srs-api-six.vercel.app/api/auth/difficultyLevel/difficultyLevel/${difficultyLevel._id}`,
           {
             method: "DELETE",
             headers: {

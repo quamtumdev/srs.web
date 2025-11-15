@@ -68,7 +68,7 @@ const Questions = () => {
       );
 
       // Now refetch the updated data from the backend
-      const response = await fetch("http://localhost:5000/api/auth/ques/");
+      const response = await fetch("https://srs-api-six.vercel.app/api/auth/ques/");
       if (!response.ok) throw new Error("Failed to fetch questions");
 
       const data = await response.json();
@@ -99,7 +99,7 @@ const Questions = () => {
       setLoading(true);
       setError(null);
       try {
-        let url = "http://localhost:5000/api/auth/ques/";
+        let url = "https://srs-api-six.vercel.app/api/auth/ques/";
 
         if (
           selectedStream &&
@@ -112,29 +112,29 @@ const Questions = () => {
           selectedUniqueCode &&
           selectedQuestions
         ) {
-          url = `http://localhost:5000/api/auth/ques/streamSubjectSubTopic?stream=${selectedStream.value}&subjectType=${selectedSubjectType.value}&subTopic=${selectedSubTopic.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/streamSubjectSubTopic?stream=${selectedStream.value}&subjectType=${selectedSubjectType.value}&subTopic=${selectedSubTopic.value}`;
         } else if (selectedStream && selectedSubjectType) {
-          url = `http://localhost:5000/api/auth/ques/streamSubject?stream=${selectedStream.value}&subjectType=${selectedSubjectType.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/streamSubject?stream=${selectedStream.value}&subjectType=${selectedSubjectType.value}`;
         } else if (selectedStream) {
-          url = `http://localhost:5000/api/auth/ques/filter?stream=${selectedStream.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter?stream=${selectedStream.value}`;
         } else if (selectedSubjectType) {
-          url = `http://localhost:5000/api/auth/ques/subject?subjectType=${selectedSubjectType.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/subject?subjectType=${selectedSubjectType.value}`;
         } else if (selectedSubTopic) {
-          url = `http://localhost:5000/api/auth/ques/filter-by-subtopic?subTopic=${selectedSubTopic.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter-by-subtopic?subTopic=${selectedSubTopic.value}`;
         } else if (selectedSkill) {
-          url = `http://localhost:5000/api/auth/ques/filter-by-skill?skill=${selectedSkill.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter-by-skill?skill=${selectedSkill.value}`;
         } else if (selectedLevel) {
-          url = `http://localhost:5000/api/auth/ques/filter-by-level?level=${selectedLevel.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter-by-level?level=${selectedLevel.value}`;
         } else if (selectedquestionType) {
-          url = `http://localhost:5000/api/auth/ques/filter-by-type?questionType=${selectedquestionType.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter-by-type?questionType=${selectedquestionType.value}`;
         } else if (selectedActive) {
-          url = `http://localhost:5000/api/auth/ques/filter-by-status?status=${selectedActive.value}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter-by-status?status=${selectedActive.value}`;
         } else if (selectedUniqueCode) {
-          url = `http://localhost:5000/api/auth/ques/filter-by-SRSUniqueCode?SRSUniqueCode=${selectedUniqueCode}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter-by-SRSUniqueCode?SRSUniqueCode=${selectedUniqueCode}`;
         } else if (selectedQuestions) {
-          url = `http://localhost:5000/api/auth/ques/filter-by-enterQuestion?enterQuestion=${selectedQuestions}`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/filter-by-enterQuestion?enterQuestion=${selectedQuestions}`;
         } else {
-          url = `http://localhost:5000/api/auth/ques/reset`;
+          url = `https://srs-api-six.vercel.app/api/auth/ques/reset`;
         }
 
         const response = await axios.get(url);

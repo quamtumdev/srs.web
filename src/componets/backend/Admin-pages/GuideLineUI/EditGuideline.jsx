@@ -58,7 +58,7 @@ const EditGuideline = ({ guideline, setGuidelinesData, closeEditModal }) => {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/guideline/guidelines/${guideline._id}`,
+        `https://srs-api-six.vercel.app/api/auth/guideline/guidelines/${guideline._id}`,
         {
           method: "PUT",
           headers: {
@@ -100,7 +100,7 @@ const EditGuideline = ({ guideline, setGuidelinesData, closeEditModal }) => {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/guideline/guidelines/${guideline._id}`,
+          `https://srs-api-six.vercel.app/api/auth/guideline/guidelines/${guideline._id}`,
           {
             method: "DELETE",
             headers: {

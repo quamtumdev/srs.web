@@ -68,7 +68,7 @@ const EditExam = ({ exam, updateExamData, closeEditModal, deleteExamData }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/exam/exam/${exam._id}`,
+        `https://srs-api-six.vercel.app/api/auth/exam/exam/${exam._id}`,
         {
           method: "PUT",
           headers: {
@@ -99,7 +99,7 @@ const EditExam = ({ exam, updateExamData, closeEditModal, deleteExamData }) => {
       try {
         // Make DELETE request to the backend API to delete the exam from the database
         const response = await fetch(
-          `http://localhost:5000/api/auth/exam/exam/${exam._id}`,
+          `https://srs-api-six.vercel.app/api/auth/exam/exam/${exam._id}`,
           {
             method: "DELETE",
             headers: {

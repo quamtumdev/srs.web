@@ -202,7 +202,7 @@ const MaterialEditForm = ({ material, onUpdateSuccess, onCancel }) => {
       // ✅ API call
       console.log("🌐 Sending request to backend...");
       const response = await axios.put(
-        `http://localhost:5000/api/materials/${material._id}`,
+        `https://srs-api-six.vercel.app/api/materials/${material._id}`,
         uploadData,
         {
           headers: {

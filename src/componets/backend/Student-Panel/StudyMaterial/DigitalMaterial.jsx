@@ -38,7 +38,7 @@ const DigitalMaterial = () => {
 
       // API Call to backend
       const response = await axios.get(
-        "http://localhost:5000/api/student/materials",
+        "https://srs-api-six.vercel.app/api/student/materials",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -85,7 +85,7 @@ const DigitalMaterial = () => {
       console.log(`Starting download for: ${fileName}`);
 
       const response = await axios.get(
-        `http://localhost:5000/api/student/materials/download/${materialId}`,
+        `https://srs-api-six.vercel.app/api/student/materials/download/${materialId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -126,7 +126,7 @@ const DigitalMaterial = () => {
   //     console.log(`Opening: ${fileName}`);
 
   //     const response = await axios.get(
-  //       `http://localhost:5000/api/student/materials/view/${materialId}`,
+  //       `https://srs-api-six.vercel.app/api/student/materials/view/${materialId}`,
   //       {
   //         headers: {
   //           Authorization: `Bearer ${token}`,

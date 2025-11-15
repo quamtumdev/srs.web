@@ -81,7 +81,7 @@ const SubjectList = ({ onSubjectSelect }) => {
 
         // Updated URL with studentId
         const response = await axios.get(
-          `http://localhost:5000/api/practice/student/${studentId}/subjects`
+          `https://srs-api-six.vercel.app/api/practice/student/${studentId}/subjects`
         );
 
         if (response.data.success) {

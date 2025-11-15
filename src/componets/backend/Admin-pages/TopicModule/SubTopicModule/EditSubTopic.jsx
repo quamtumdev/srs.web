@@ -50,7 +50,7 @@ function EditSubTopic({ topic, setSubTopicsUnits, closeEditModal }) {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/subtopic/subtopic/${topic._id}`,
+        `https://srs-api-six.vercel.app/api/auth/subtopic/subtopic/${topic._id}`,
         {
           method: "PUT",
           headers: {
@@ -94,7 +94,7 @@ function EditSubTopic({ topic, setSubTopicsUnits, closeEditModal }) {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/subtopic/subtopic/${topic._id}`,
+          `https://srs-api-six.vercel.app/api/auth/subtopic/subtopic/${topic._id}`,
           {
             method: "DELETE",
             headers: {

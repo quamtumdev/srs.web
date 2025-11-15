@@ -9,7 +9,7 @@ import QuestionCard from "./QuestionCard";
 import QuizNavigation from "./QuizNavigation";
 import QuizResults from "./QuizResults";
 
-const API_BASE_URL = "http://localhost:5000/api/practice";
+const API_BASE_URL = "https://srs-api-six.vercel.app/api/practice";
 
 const QuizInterface = ({
   subject,

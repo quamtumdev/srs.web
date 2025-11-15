@@ -51,7 +51,7 @@ const EditTag = ({ tags, setTagsData, closeEditModal }) => {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/tags/tags/${tags._id}`,
+        `https://srs-api-six.vercel.app/api/auth/tags/tags/${tags._id}`,
         {
           method: "PUT",
           headers: {
@@ -93,7 +93,7 @@ const EditTag = ({ tags, setTagsData, closeEditModal }) => {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/tags/tags/${tags._id}`,
+          `https://srs-api-six.vercel.app/api/auth/tags/tags/${tags._id}`,
           {
             method: "DELETE",
             headers: {

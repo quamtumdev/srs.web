@@ -5,7 +5,7 @@ import TestBasicInfo from "./TestBasicInfo";
 import QuestionManager from "./QuestionManager";
 import TestPreview from "./TestPreview";
 
-const API_BASE_URL = "http://localhost:5000/api/tests";
+const API_BASE_URL = "https://srs-api-six.vercel.app/api/tests";
 
 const EditTest = () => {
   const { id } = useParams();

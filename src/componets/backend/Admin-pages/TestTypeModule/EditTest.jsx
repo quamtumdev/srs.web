@@ -53,7 +53,7 @@ const EditTest = ({ test, setTestsData, closeEditModal }) => {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/test/test/${test._id}`,
+        `https://srs-api-six.vercel.app/api/auth/test/test/${test._id}`,
         {
           method: "PUT",
           headers: {
@@ -95,7 +95,7 @@ const EditTest = ({ test, setTestsData, closeEditModal }) => {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/test/test/${test._id}`,
+          `https://srs-api-six.vercel.app/api/auth/test/test/${test._id}`,
           {
             method: "DELETE",
             headers: {

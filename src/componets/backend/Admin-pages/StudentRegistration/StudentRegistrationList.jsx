@@ -23,7 +23,7 @@ const StudentRegistrationList = () => {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/auth/studentRegistration/students"
+        "https://srs-api-six.vercel.app/api/auth/studentRegistration/students"
       );
 
       if (response.data.success) {

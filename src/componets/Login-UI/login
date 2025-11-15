@@ -8,7 +8,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import firebase from "../../componets/firebase/firebase";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-const URL = "http://localhost:5000/api/auth/login";
+const URL = "https://srs-api-six.vercel.app/api/auth/login";
 export const LoginUi = () => {
   const [showModal, setShowModal] = useState(false); // To show/hide login modal
   const [showRegisterModal, setShowRegisterModal] = useState(false); // To show/hide register modal

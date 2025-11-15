@@ -54,7 +54,7 @@ function EditInnerSubjectUnit({ unit, setInnerSubjectUnits, closeEditModal }) {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/innerSubjectUnits/innerSubjectUnits/${unit._id}`,
+        `https://srs-api-six.vercel.app/api/auth/innerSubjectUnits/innerSubjectUnits/${unit._id}`,
         {
           method: "PUT",
           headers: {
@@ -99,7 +99,7 @@ function EditInnerSubjectUnit({ unit, setInnerSubjectUnits, closeEditModal }) {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/innerSubjectUnits/innerSubjectUnits/${unit._id}`,
+          `https://srs-api-six.vercel.app/api/auth/innerSubjectUnits/innerSubjectUnits/${unit._id}`,
           {
             method: "DELETE",
             headers: {

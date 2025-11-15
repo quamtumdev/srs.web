@@ -19,7 +19,7 @@ const Exam = () => {
       setLoading(true); // Set loading state to true
       try {
         const response = await fetch(
-          "http://localhost:5000/api/auth/exam/exam"
+          "https://srs-api-six.vercel.app/api/auth/exam/exam"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch exams");

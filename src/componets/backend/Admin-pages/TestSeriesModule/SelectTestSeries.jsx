@@ -17,7 +17,7 @@ const SelectTestSeries = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "http://localhost:5000/api/auth/testlists"
+          "https://srs-api-six.vercel.app/api/auth/testlists"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch tests");

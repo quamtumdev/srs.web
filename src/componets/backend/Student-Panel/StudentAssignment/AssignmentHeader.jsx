@@ -40,7 +40,7 @@ const AssignmentHeader = ({ subject, studentId }) => {
       setLoading(true);
       // Backend API call for subject-specific assignments
       const response = await axios.get(
-        `http://localhost:5000/api/assignments/student/${studentId}/subject/${subject.id}/assignments`
+        `https://srs-api-six.vercel.app/api/assignments/student/${studentId}/subject/${subject.id}/assignments`
       );
 
       if (response.data.success) {

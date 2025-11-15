@@ -27,7 +27,7 @@ const MaterialListView = ({ onEditClick }) => {
         return;
       }
 
-      const response = await axios.get("http://localhost:5000/api/materials", {
+      const response = await axios.get("https://srs-api-six.vercel.app/api/materials", {
         params: filter,
         headers: {
           Authorization: `Bearer ${adminToken}`,
@@ -56,7 +56,7 @@ const MaterialListView = ({ onEditClick }) => {
         return;
       }
 
-      await axios.delete(`http://localhost:5000/api/materials/${id}`, {
+      await axios.delete(`https://srs-api-six.vercel.app/api/materials/${id}`, {
         headers: {
           Authorization: `Bearer ${adminToken}`,
         },

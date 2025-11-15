@@ -66,7 +66,7 @@ function AddStream({ addNewStream }) {
     try {
       // Send POST request to the backend to save the new stream
       const response = await fetch(
-        "http://localhost:5000/api/auth/stream/streams",
+        "https://srs-api-six.vercel.app/api/auth/stream/streams",
         {
           method: "POST",
           headers: {

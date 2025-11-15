@@ -54,7 +54,7 @@ export const useStudentProfile = () => {
       setProfileId(studentData.id);
 
       const response = await axios.get(
-        `http://localhost:5000/api/auth/studentRegistration/profile/${studentData.id}`
+        `https://srs-api-six.vercel.app/api/auth/studentRegistration/profile/${studentData.id}`
       );
 
       if (response.data.success && response.data.student) {

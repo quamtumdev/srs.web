@@ -171,7 +171,7 @@ function EditMarkingScheme({ marking, setMarkingData, closeEditModal }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/markingSchemes/markingSchemes/${marking._id}`,
+        `https://srs-api-six.vercel.app/api/auth/markingSchemes/markingSchemes/${marking._id}`,
         {
           method: "PUT",
           headers: {

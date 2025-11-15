@@ -22,7 +22,7 @@ export const useSubjectChapters = subjectName => {
 
         // Get first enrolled course
         const coursesResponse = await axios.get(
-          `http://localhost:5000/api/course/student/${studentData.id}/courses`
+          `https://srs-api-six.vercel.app/api/course/student/${studentData.id}/courses`
         );
 
         if (
@@ -33,7 +33,7 @@ export const useSubjectChapters = subjectName => {
 
           // Fetch chapters for the subject
           const response = await axios.get(
-            `http://localhost:5000/api/course/student/${studentData.id}/course/${courseId}/subject/${subjectName}/chapters`
+            `https://srs-api-six.vercel.app/api/course/student/${studentData.id}/course/${courseId}/subject/${subjectName}/chapters`
           );
 
           if (response.data.success) {

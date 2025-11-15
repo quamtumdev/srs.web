@@ -76,7 +76,7 @@ const AssignmentDetailsView = () => {
       );
 
       const response = await axios.get(
-        `http://localhost:5000/api/assignments/student/${studentId}/assignment/${assignmentId}`,
+        `https://srs-api-six.vercel.app/api/assignments/student/${studentId}/assignment/${assignmentId}`,
         { timeout: 10000 }
       );
 
@@ -215,7 +215,7 @@ const AssignmentDetailsView = () => {
       );
 
       const response = await axios.post(
-        `http://localhost:5000/api/assignments/student/${studentId}/assignment/${assignmentId}/submit`,
+        `https://srs-api-six.vercel.app/api/assignments/student/${studentId}/assignment/${assignmentId}/submit`,
         formData,
         {
           headers: {
@@ -278,7 +278,7 @@ const AssignmentDetailsView = () => {
       console.log("Downloading assignment resources for:", assignment.name);
 
       const response = await axios.get(
-        `http://localhost:5000/api/assignments/student/${studentId}/assignment/${assignmentId}/download-resources`,
+        `https://srs-api-six.vercel.app/api/assignments/student/${studentId}/assignment/${assignmentId}/download-resources`,
         {
           responseType: "blob",
           timeout: 30000,

@@ -19,7 +19,7 @@ const InnerSubjectUnit = ({ subject }) => {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/innerSubjectUnits/innerSubjectUnits/${subject._id}`
+          `https://srs-api-six.vercel.app/api/auth/innerSubjectUnits/innerSubjectUnits/${subject._id}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch inner subject units");

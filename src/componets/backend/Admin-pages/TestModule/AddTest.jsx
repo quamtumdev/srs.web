@@ -243,7 +243,7 @@ function AddTest({ addNewTest }) {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/testlists", {
+      const response = await fetch("https://srs-api-six.vercel.app/api/auth/testlists", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

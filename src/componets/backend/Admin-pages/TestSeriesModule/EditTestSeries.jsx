@@ -85,7 +85,7 @@ const EditTestSeries = ({ testSeries, setTestSeriesData, closeEditModal }) => {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/test-series/${testSeries._id}`,
+        `https://srs-api-six.vercel.app/api/auth/test-series/${testSeries._id}`,
         {
           method: "PUT",
           headers: {
@@ -127,7 +127,7 @@ const EditTestSeries = ({ testSeries, setTestSeriesData, closeEditModal }) => {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/test-series/${testSeries._id}`,
+          `https://srs-api-six.vercel.app/api/auth/test-series/${testSeries._id}`,
           {
             method: "DELETE",
             headers: {

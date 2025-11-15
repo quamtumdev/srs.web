@@ -254,7 +254,7 @@ function AddNewQuestion({ addNewQuestions }) {
       console.log("Sending data:", newQuestionData);
 
       // Send POST request to the backend to save the new question data
-      const response = await fetch("http://localhost:5000/api/auth/ques/", {
+      const response = await fetch("https://srs-api-six.vercel.app/api/auth/ques/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

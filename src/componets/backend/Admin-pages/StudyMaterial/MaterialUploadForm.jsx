@@ -149,7 +149,7 @@ const MaterialUploadForm = ({ onUploadSuccess }) => {
 
       // ✅ API Call with Admin Token
       const response = await axios.post(
-        "http://localhost:5000/api/materials/upload",
+        "https://srs-api-six.vercel.app/api/materials/upload",
         uploadData,
         {
           headers: {

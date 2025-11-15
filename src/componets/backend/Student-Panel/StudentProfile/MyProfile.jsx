@@ -87,7 +87,7 @@ const MyProfile = () => {
 
         // Fetch complete student registration data from API using student ID
         const response = await axios.get(
-          `http://localhost:5000/api/auth/studentRegistration/profile/${studentData.id}`
+          `https://srs-api-six.vercel.app/api/auth/studentRegistration/profile/${studentData.id}`
         );
 
         if (response.data.success && response.data.student) {
@@ -290,7 +290,7 @@ const MyProfile = () => {
 
       // Use the updated route with student ID
       const response = await axios.post(
-        `http://localhost:5000/api/auth/studentRegistration/upload-image/${profileId}`,
+        `https://srs-api-six.vercel.app/api/auth/studentRegistration/upload-image/${profileId}`,
         formData,
         {
           headers: {
@@ -365,7 +365,7 @@ const MyProfile = () => {
 
       // Always update existing profile using student ID
       response = await axios.put(
-        `http://localhost:5000/api/auth/studentRegistration/profile/${profileId}`,
+        `https://srs-api-six.vercel.app/api/auth/studentRegistration/profile/${profileId}`,
         submissionData
       );
 

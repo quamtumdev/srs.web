@@ -223,7 +223,7 @@ function EditQuestions({ data, question, setQuestionsData, closeEditModal }) {
     };
 
     try {
-      const url2 = `http://localhost:5000/api/auth/ques/${data._id}`;
+      const url2 = `https://srs-api-six.vercel.app/api/auth/ques/${data._id}`;
       const response = await fetch(url2, {
         method: "PUT",
         headers: {
@@ -270,7 +270,7 @@ function EditQuestions({ data, question, setQuestionsData, closeEditModal }) {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/ques/${data._id}`,
+          `https://srs-api-six.vercel.app/api/auth/ques/${data._id}`,
           {
             method: "DELETE",
             headers: {

@@ -28,7 +28,7 @@ const User = () => {
       setError(null); // Reset any previous errors
 
       try {
-        let url = "http://localhost:5000/api/auth/users"; // Default URL
+        let url = "https://srs-api-six.vercel.app/api/auth/users"; // Default URL
         const filters = [];
 
         // Add selectedRoles to filters if they exist (for roles filtering)

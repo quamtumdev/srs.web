@@ -37,7 +37,7 @@ const MarkingScheme = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "http://localhost:5000/api/auth/markingSchemes/markingSchemes"
+          "https://srs-api-six.vercel.app/api/auth/markingSchemes/markingSchemes"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch Marking Scheme");

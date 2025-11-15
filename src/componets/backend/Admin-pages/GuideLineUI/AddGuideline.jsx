@@ -69,7 +69,7 @@ function AddGuideline({ addNewGuideline }) {
     try {
       // Sending the new guideline data to the backend via POST request using fetch
       const response = await fetch(
-        "http://localhost:5000/api/auth/guideline/guidelines",
+        "https://srs-api-six.vercel.app/api/auth/guideline/guidelines",
         {
           method: "POST",
           headers: {

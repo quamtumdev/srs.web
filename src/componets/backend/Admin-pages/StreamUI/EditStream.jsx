@@ -51,7 +51,7 @@ const EditStream = ({ stream, setStreamsData, closeEditModal }) => {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/stream/streams/${stream._id}`,
+        `https://srs-api-six.vercel.app/api/auth/stream/streams/${stream._id}`,
         {
           method: "PUT",
           headers: {
@@ -93,7 +93,7 @@ const EditStream = ({ stream, setStreamsData, closeEditModal }) => {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/stream/streams/${stream._id}`,
+          `https://srs-api-six.vercel.app/api/auth/stream/streams/${stream._id}`,
           {
             method: "DELETE",
             headers: {

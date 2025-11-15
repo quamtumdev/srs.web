@@ -133,7 +133,7 @@ const Student = () => {
       formData.append("profileImage", file);
 
       const response = await axios.post(
-        `http://localhost:5000/api/auth/studentRegistration/upload-image/${profileId}`,
+        `https://srs-api-six.vercel.app/api/auth/studentRegistration/upload-image/${profileId}`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -192,7 +192,7 @@ const Student = () => {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/api/auth/studentRegistration/profile/${profileId}`,
+        `https://srs-api-six.vercel.app/api/auth/studentRegistration/profile/${profileId}`,
         submissionData
       );
 

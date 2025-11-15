@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import TestList from "./TestList";
 
-const API_BASE_URL = "http://localhost:5000/api/tests";
+const API_BASE_URL = "https://srs-api-six.vercel.app/api/tests";
 
 const TestModule = () => {
   const [tests, setTests] = useState([]);

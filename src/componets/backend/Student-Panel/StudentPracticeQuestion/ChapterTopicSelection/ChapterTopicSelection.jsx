@@ -5,7 +5,7 @@ import SelectionBreadcrumb from "./SelectionBreadcrumb";
 import ChapterCard from "./ChapterCard";
 import TopicCard from "./TopicCard";
 
-const API_BASE_URL = "http://localhost:5000/api/practice";
+const API_BASE_URL = "https://srs-api-six.vercel.app/api/practice";
 
 const ChapterTopicSelection = ({
   subject,

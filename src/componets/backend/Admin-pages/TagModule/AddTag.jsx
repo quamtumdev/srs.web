@@ -65,7 +65,7 @@ function AddTag({ addNewTags }) {
 
     try {
       // Send POST request to the backend to save the new stream
-      const response = await fetch("http://localhost:5000/api/auth/tags/tags", {
+      const response = await fetch("https://srs-api-six.vercel.app/api/auth/tags/tags", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

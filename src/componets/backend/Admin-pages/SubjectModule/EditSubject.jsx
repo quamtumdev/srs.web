@@ -85,7 +85,7 @@ function EditSubject({ subject, setSubjectsData, closeEditModal }) {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/subjects/subjects/${subject._id}`,
+        `https://srs-api-six.vercel.app/api/auth/subjects/subjects/${subject._id}`,
         {
           method: "PUT",
           headers: {
@@ -122,7 +122,7 @@ function EditSubject({ subject, setSubjectsData, closeEditModal }) {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/subjects/subjects/${subject._id}`,
+          `https://srs-api-six.vercel.app/api/auth/subjects/subjects/${subject._id}`,
           {
             method: "DELETE",
             headers: {

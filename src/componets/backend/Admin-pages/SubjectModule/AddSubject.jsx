@@ -94,7 +94,7 @@ function AddSubject({ addNewSubject }) {
     try {
       // Send POST request to the backend to save the new subject
       const response = await fetch(
-        "http://localhost:5000/api/auth/subject/subjects",
+        "https://srs-api-six.vercel.app/api/auth/subject/subjects",
         {
           method: "POST",
           headers: {

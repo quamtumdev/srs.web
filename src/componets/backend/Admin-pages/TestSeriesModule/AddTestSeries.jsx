@@ -92,7 +92,7 @@ function AddTestSeries({ addNewTestSeries }) {
     try {
       // Send POST request to the backend to save the new Test Series
       const response = await fetch(
-        "http://localhost:5000/api/auth/test-series", // Change endpoint to your actual API for Test Series
+        "https://srs-api-six.vercel.app/api/auth/test-series", // Change endpoint to your actual API for Test Series
         {
           method: "POST",
           headers: {

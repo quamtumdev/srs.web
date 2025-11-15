@@ -19,7 +19,7 @@ const TestSeries = () => {
       setLoading(true); // Set loading state to true
       try {
         const response = await fetch(
-          "http://localhost:5000/api/auth/test-series" // Assuming the endpoint for test series is "/test-series"
+          "https://srs-api-six.vercel.app/api/auth/test-series" // Assuming the endpoint for test series is "/test-series"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch test series");

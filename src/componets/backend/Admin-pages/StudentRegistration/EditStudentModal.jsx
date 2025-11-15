@@ -167,7 +167,7 @@ const EditStudentModal = ({ student, onClose, onSuccess, setStudentsData }) => {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/api/auth/studentRegistration/profile/${student._id}`,
+        `https://srs-api-six.vercel.app/api/auth/studentRegistration/profile/${student._id}`,
         updatedStudent
       );
 
@@ -201,7 +201,7 @@ const EditStudentModal = ({ student, onClose, onSuccess, setStudentsData }) => {
       try {
         setLoading(true);
         const response = await axios.delete(
-          `http://localhost:5000/api/auth/studentRegistration/profile/${student._id}`
+          `https://srs-api-six.vercel.app/api/auth/studentRegistration/profile/${student._id}`
         );
 
         if (response.data.success) {

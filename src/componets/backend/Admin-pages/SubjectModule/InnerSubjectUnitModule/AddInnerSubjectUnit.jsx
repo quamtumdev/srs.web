@@ -69,7 +69,7 @@ function AddInnerSubjectUnit({ addNewInnerSubjectUnit, subjectId }) {
     try {
       // Send POST request to the backend to save the new inner subject unit
       const response = await fetch(
-        "http://localhost:5000/api/auth/innerSubjectUnits/innerSubjectUnits/",
+        "https://srs-api-six.vercel.app/api/auth/innerSubjectUnits/innerSubjectUnits/",
         {
           method: "POST",
           headers: {

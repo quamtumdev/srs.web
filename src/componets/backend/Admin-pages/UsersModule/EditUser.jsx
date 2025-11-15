@@ -55,7 +55,7 @@ const EditUser = ({ user, setUsersData, closeEditModal }) => {
       };
 
       const response = await fetch(
-        `http://localhost:5000/api/auth/users/${user._id}`,
+        `https://srs-api-six.vercel.app/api/auth/users/${user._id}`,
         {
           method: "PUT",
           headers: {
@@ -100,7 +100,7 @@ const EditUser = ({ user, setUsersData, closeEditModal }) => {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/users/${user._id}`,
+          `https://srs-api-six.vercel.app/api/auth/users/${user._id}`,
           {
             method: "DELETE",
             headers: {

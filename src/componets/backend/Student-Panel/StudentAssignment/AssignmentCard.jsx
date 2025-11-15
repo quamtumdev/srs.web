@@ -99,7 +99,7 @@ const AssignmentCard = ({ assignment, subject }) => {
     try {
       // ✅ Real backend API call for assignment submission
       const response = await axios.post(
-        `http://localhost:5000/api/assignments/student/${studentId}/assignment/${assignment.id}/submit`,
+        `https://srs-api-six.vercel.app/api/assignments/student/${studentId}/assignment/${assignment.id}/submit`,
         {
           submissionFile: null, // File upload will be handled separately in file upload component
           notes: `Assignment "${assignment.name}" submitted via web interface`,

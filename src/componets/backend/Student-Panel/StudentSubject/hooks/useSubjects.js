@@ -27,7 +27,7 @@ export const useSubjects = courseId => {
         if (!currentCourseId) {
           // If no courseId, get from student's enrolled courses
           const coursesResponse = await axios.get(
-            `http://localhost:5000/api/course/student/${studentData.id}/courses`
+            `https://srs-api-six.vercel.app/api/course/student/${studentData.id}/courses`
           );
 
           if (
@@ -43,7 +43,7 @@ export const useSubjects = courseId => {
 
         // Fetch subjects for the course
         const response = await axios.get(
-          `http://localhost:5000/api/course/student/${studentData.id}/course/${currentCourseId}/subjects`
+          `https://srs-api-six.vercel.app/api/course/student/${studentData.id}/course/${currentCourseId}/subjects`
         );
 
         if (response.data.success) {

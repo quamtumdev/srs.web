@@ -66,7 +66,7 @@ function AddSkills({ addNewSkills }) {
     try {
       // Send POST request to the backend to save the new stream
       const response = await fetch(
-        "http://localhost:5000/api/auth/skills/skills",
+        "https://srs-api-six.vercel.app/api/auth/skills/skills",
         {
           method: "POST",
           headers: {

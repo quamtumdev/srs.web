@@ -19,7 +19,7 @@ const DifficultyLevel = () => {
       setLoading(true); // Set loading state to true
       try {
         const response = await fetch(
-          "http://localhost:5000/api/auth/difficultyLevel/difficultyLevels" // Assuming streams API endpoint
+          "https://srs-api-six.vercel.app/api/auth/difficultyLevel/difficultyLevels" // Assuming streams API endpoint
         );
         if (!response.ok) {
           throw new Error("Failed to fetch Difficulty Levels");

@@ -284,7 +284,7 @@ function EditTopic({ topic, setTopicsData, closeEditModal }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/topic/topic/${topic._id}`,
+        `https://srs-api-six.vercel.app/api/auth/topic/topic/${topic._id}`,
         {
           method: "PUT",
           headers: {
@@ -333,7 +333,7 @@ function EditTopic({ topic, setTopicsData, closeEditModal }) {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/topic/topic/${topic._id}`,
+          `https://srs-api-six.vercel.app/api/auth/topic/topic/${topic._id}`,
           {
             method: "DELETE",
             headers: {

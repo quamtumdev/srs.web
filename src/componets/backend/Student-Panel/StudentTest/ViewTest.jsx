@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api/tests";
+const API_BASE_URL = "https://srs-api-six.vercel.app/api/tests";
 
 const ViewTest = () => {
   const { id } = useParams();
